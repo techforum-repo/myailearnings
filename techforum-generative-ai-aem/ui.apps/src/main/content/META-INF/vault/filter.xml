@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/GenerativeAI/clientlibs"/>
+    <filter root="/apps/GenerativeAI/components"/>
+    <filter root="/apps/GenerativeAI/i18n"/>
+</workspaceFilter>

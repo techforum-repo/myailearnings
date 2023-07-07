@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/GenerativeAI",
+        "create path (nt:unstructured) /content/dam/GenerativeAI/jcr:content",
+        "set properties on /content/dam/GenerativeAI/jcr:content\n  set cq:conf{String} to /conf/GenerativeAI\n  set jcr:title{String} to \"Generative AI Playground\"\nend"
+    ]
+}
