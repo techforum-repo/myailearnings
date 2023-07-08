@@ -27,6 +27,16 @@
 
     function showDialog(componentpath) {
 
+        var dialog = document.querySelector('#generateImage');
+
+        if (dialog) {
+            var alert=$("#coralalert");
+            alert[0].hide();
+            dialog.content.querySelector("#coralwait").hide();
+            dialog.show();
+            return;
+          }
+
         // Create the dialog
         var dialog = new Coral.Dialog().set({
             id: 'generateImage',
@@ -42,15 +52,6 @@
             closable: true,
             movable: true
         });
-
-
-        var closeButton = dialog.footer.querySelector('button[coral-close]');
-
-  		closeButton.addEventListener('click', function(event) {
-
-			window.location.reload();
-
-  		});
 
 
         // Add an event listener to the submit button
@@ -76,7 +77,7 @@
 					dialog.content.querySelector("#coralwait").hide();
                     $("#coralalert")[0].hide();
                     dialog.hide();
-                    window.location.reload();
+                    Granite.author.ContentFrame.reload();
                 } else {
                     dialog.content.querySelector("#coralwait").hide();
 
