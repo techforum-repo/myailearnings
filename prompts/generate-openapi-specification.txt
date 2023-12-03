@@ -1,0 +1,62 @@
+Please generate an OpenAPI YAML definition incorporating the following details. 
+Ensure the inclusion of separate schemas for any nested objects. 
+Also, include request and response examples using the sample values provided.
+
+API Title: Sample API
+API Description: Sample API Specification
+API Version: "1.0.0"
+Contact Name: test
+Contact Email: test@gmail.com
+
+API Servers:
+- Production server: https://test.search.com/rest
+- Staging server: https://stage.test.search.com/rest
+
+Paths:
+
+	1. Search
+	   - Enpoint: /search/v2
+	   - Method: POST
+	   - Summary: Search API
+	   - Description: Search Data
+	   - Query Parameter: testparam
+	   - Authentication: bearer token authentication
+
+	   - Sample Request Body 
+
+		{
+		  "q": "test",
+		  "context": {
+			"country": "US",
+			"locale": "en",
+			"environment": "stage"
+		  }
+		}
+
+	   - Sample Response
+
+		{
+		  "totalCount": 1,
+		  "result": [
+			{
+			  "uri": "https://test.com/test.pdf",
+			  "test1": [
+				[
+				  "test1"
+				]
+			  ],
+			  "test2": [
+				[
+				  "test2"
+				]
+			  ],
+			  "test3": "test3",
+			  "test4": [
+				[
+				  "test4_1",
+				  "test4_2"
+				]
+			  ]     
+			}
+		  ]
+		}
