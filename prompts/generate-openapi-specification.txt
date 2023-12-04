@@ -1,6 +1,7 @@
 Please generate an OpenAPI YAML definition incorporating the following details. 
 Ensure the inclusion of separate schemas for any nested objects. 
 Also, include request and response examples using the sample values provided.
+Also enable bearer token authentication at endpoint level
 
 API Title: Sample API
 API Description: Sample API Specification
@@ -19,8 +20,7 @@ Paths:
 	   - Method: POST
 	   - Summary: Search API
 	   - Description: Search Data
-	   - Query Parameter: testparam
-	   - Authentication: bearer token authentication
+	   - Query Parameter: testparam	  
 
 	   - Sample Request Body 
 
