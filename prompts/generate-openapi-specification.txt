@@ -60,3 +60,10 @@ Paths:
 			}
 		  ]
 		}
+
+
+Additional Prompts:
+
+Include an enum named 'environment' with values 'stage', 'uat', and 'prod'. Give me the complete specification
+Add a description for the request body field 'q', labeling it as 'Product Code. Give me the complete specification
+
