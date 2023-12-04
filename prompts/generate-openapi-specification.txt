@@ -1,8 +1,6 @@
 Please generate an OpenAPI YAML definition with the following details. 
 General Rules:
- - Define seperate schemas for request/response and any nested objects. 
- - Include request and response examples using the sample values provided.
- - Enable bearer token authentication at path
+ - Create refernce schemas for request/response and any nested objects using example request and response
 
 API Details:
 - API Title: Sample API
@@ -16,15 +14,15 @@ API Servers:
 - Staging server: https://stage.test.search.com/rest
 
 Paths:
-
 	1. Search
 	   - Enpoint: /search/v2
+           - Security: Bearer token
 	   - Method: POST
 	   - Summary: Search API
 	   - Description: Search Data
 	   - Query Parameter: testparam	  
 
-	   - Sample Request Body 
+	   - Example Request 
 
 		{
 		  "q": "test",
@@ -35,7 +33,7 @@ Paths:
 		  }
 		}
 
-	   - Sample Response
+	   - Example Response
 
 		{
 		  "totalCount": 1,
