@@ -1,13 +1,15 @@
-Please generate an OpenAPI YAML definition incorporating the following details. 
-Ensure the inclusion of separate schemas for any nested objects. 
-Also, include request and response examples using the sample values provided.
-Also enable bearer token authentication at endpoint level
+Please generate an OpenAPI YAML definition with the following details. 
+General Rules:
+ - Define seperate schemas for request/response and any nested objects. 
+ - Include request and response examples using the sample values provided.
+ - Enable bearer token authentication at path
 
-API Title: Sample API
-API Description: Sample API Specification
-API Version: "1.0.0"
-Contact Name: test
-Contact Email: test@gmail.com
+API Details:
+- API Title: Sample API
+- API Description: Sample API Specification
+- API Version: "1.0.0"
+- Contact Name: test
+- Contact Email: test@gmail.com
 
 API Servers:
 - Production server: https://test.search.com/rest
